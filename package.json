@@ -1,0 +1,21 @@
+{
+  "name": "changelog-verify",
+  "version": "0.0.0",
+  "description": "Verify a changelog has correct entries",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "mocha test/",
+    "version": "./scripts/version-changelog.js CHANGELOG.md && ./cli.js CHANGELOG.md"
+  },
+  "keywords": [
+    "changelog"
+  ],
+  "author": "Jess Telford <hi+npm@jes.st> (http://jes.st)",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-spawn": "^4.0.2",
+    "github-url-from-git": "^1.4.0",
+    "mocha": "^3.1.2"
+  }
+}
