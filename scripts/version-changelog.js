@@ -45,7 +45,7 @@ function updateCompareUri(data, versionString) {
 
   }
 
-  const originUrl = spawn.sync('git', ['config', '--get', 'remote.origin.url']).stdout.toString();
+  const originUrl = spawn.sync('git', ['config', '--get', 'remote.origin.url']).stdout.toString().trim();
 
   if (!originUrl) {
     console.warn('[WARN]: Unable to determin origin URL for adding to changelog');
@@ -53,7 +53,7 @@ function updateCompareUri(data, versionString) {
   }
 
   // Insert a link since there isn't one
-  const firstSha = spawn.sync('git', ['rev-list', '--max-parents=0', 'HEAD']).stdout.toString();
+  const firstSha = spawn.sync('git', ['rev-list', '--max-parents=0', 'HEAD']).stdout.toString().trim();
 
   const compareUrl = `${githubUrlFromGit(originUrl)}/compare`;
 
