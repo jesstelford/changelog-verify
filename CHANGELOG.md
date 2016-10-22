@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [1.0.1][] - 2016-10-22
+
 ### Fixed
 
 - Remove extra new line from Changelog links
@@ -19,5 +21,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Include tests for [in]valid cases
 - Dogfood the tool
 
-[Unreleased]: https://github.com/jesstelford/changelog-verify/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/jesstelford/changelog-verify/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/jesstelford/changelog-verify/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/jesstelford/changelog-verify/compare/f95df583af4612319aad60e9957976a2c07e5bf2...v1.0.0
