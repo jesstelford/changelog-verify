@@ -7,8 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [1.0.0][] - 2016-10-22
+
 ### Initial release
 
 - Check `CHANGELOG.md` contains non-heading items between each change log entry.
 - Include tests for [in]valid cases
 - Dogfood the tool
+
+[Unreleased]: https://github.com/jesstelford/changelog-verify.git
+/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/jesstelford/changelog-verify.git
+/compare/f95df583af4612319aad60e9957976a2c07e5bf2
+...v1.0.0
