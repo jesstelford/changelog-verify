@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Fixed
+
+- Actually dog food the tools recommended
+
 ## [1.0.2][] - 2016-10-23
 
 ### Added
