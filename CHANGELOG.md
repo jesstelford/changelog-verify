@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Added
+
+- Instructions on using it with
+  [`version-changelog`](https://github.com/jesstelford/version-changelog).
+
 ## [1.0.1][] - 2016-10-22
 
 ### Fixed

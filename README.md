@@ -2,6 +2,25 @@
 
 Ensure that your `CHANGELOG.md` contains a list of changes.
 
+Goes great with
+[`version-changelog`](https://github.com/jesstelford/version-changelog).
+Add this to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "version": "version-changelog CHANGELOG.md && changelog-verify CHANGELOG.md && git add CHANGELOG.md"
+  }
+}
+```
+
+Now whenever you execute `npm version`
+(or [`np`](https://github.com/sindresorhus/np)),
+your `CHANGELOG.md` will be given the correct version info,
+checked for validity
+(did you forget to add changelog notes?)
+then added to the release commit.
+
 ## Usage
 
 Given the following `./CHANGELOG.md`
