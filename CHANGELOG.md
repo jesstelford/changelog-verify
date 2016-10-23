@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [1.0.3][] - 2016-10-23
+
 ### Fixed
 
 - Actually dog food the tools recommended
@@ -32,7 +34,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Include tests for [in]valid cases
 - Dogfood the tool
 
-[Unreleased]: https://github.com/jesstelford/changelog-verify/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/jesstelford/changelog-verify/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/jesstelford/changelog-verify/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/jesstelford/changelog-verify/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/jesstelford/changelog-verify/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/jesstelford/changelog-verify/compare/f95df583af4612319aad60e9957976a2c07e5bf2...v1.0.0

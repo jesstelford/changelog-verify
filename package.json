@@ -1,6 +1,6 @@
 {
   "name": "changelog-verify",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Verify a changelog has correct entries",
   "main": "index.js",
   "bin": "cli.js",
