@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Fixed
+
+- Added missing `upath` dep. (#2 by @alex-e-leon)
+
 ## [1.0.3][] - 2016-10-23
 
 ### Fixed
