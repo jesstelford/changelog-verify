@@ -13,6 +13,9 @@
   ],
   "author": "Jess Telford <hi+npm@jes.st> (http://jes.st)",
   "license": "ISC",
+  "dependencies": {
+    "upath": "^0.2.0"
+  },
   "devDependencies": {
     "cross-spawn": "^4.0.2",
     "github-url-from-git": "^1.4.0",
