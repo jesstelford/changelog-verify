@@ -17,6 +17,11 @@ function validateContent(content) {
 }
 
 module.exports = function verifyChangelog(data, unreleasedNotEmpty, done) {
+  // Variadic arguments
+  if (typeof unreleasedNotEmpty === 'function') {
+    done = unreleasedNotEmpty;
+    unreleasedNotEmpty = false;
+  }
 
   // Regex's store global state.
   // They must remain inside this function so they're reset each time it's
