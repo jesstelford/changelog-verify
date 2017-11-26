@@ -274,7 +274,7 @@ describe('Unreleased Changelog', function() {
 
   describe('Invalid Changelog', function() {
 
-    it('Has an empty Unreleased section', function(done) {
+    it('Errors on an empty Unreleased section', function(done) {
       verifyChangelog(
       `
 # Changelog
@@ -286,13 +286,13 @@ describe('Unreleased Changelog', function() {
         `.trim(),
         true,
         function(error) {
-          assert(error === 'No updates have been added to the "[Unreleased]" section in CHANGELOG');
+          assert(error === 'No updates have been added to the "## [Unreleased]" section in CHANGELOG');
           done();
         }
       );
     });
 
-    it('Defines the Unreleased section after a heading', function(done) {
+    it('Errors when Unreleased section after a heading', function(done) {
       verifyChangelog(
       `
 # Changelog
@@ -305,7 +305,7 @@ describe('Unreleased Changelog', function() {
         `.trim(),
         true,
         function(error) {
-          assert(error === '"[Unreleased]" must be the first section in the CHANGELOG');
+          assert(error === '"## [Unreleased]" must be the first section in the CHANGELOG');
           done();
         }
       );
@@ -324,6 +324,35 @@ describe('Unreleased Changelog', function() {
           assert(error === 'CHANGELOG doesn\'t have a valid "## [Unreleased]" section');
           done();
         }
+      );
+    });
+    
+    it('Ignores Unreleased section when flag is false', function(done) {
+      verifyChangelog(
+      `
+# Changelog
+
+## [Unreleased][]
+
+## [1.0.0][] - 2016-10-10
+- Bar
+        `.trim(),
+        false,
+        done
+      );
+    });
+    
+    it('Supports variadic arguments for flag / callback, defaulting to false', function(done) {
+      verifyChangelog(
+      `
+# Changelog
+
+## [Unreleased][]
+
+## [1.0.0][] - 2016-10-10
+- Bar
+        `.trim(),
+        done
       );
     });
   });
