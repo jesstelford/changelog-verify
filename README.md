@@ -4,6 +4,7 @@ Ensure that your `CHANGELOG.md` contains a list of changes.
 
 Goes great with
 [`version-changelog`](https://github.com/jesstelford/version-changelog).
+
 Add this to your `package.json`:
 
 ```json
@@ -20,6 +21,23 @@ your `CHANGELOG.md` will be given the correct version info,
 checked for validity
 (did you forget to add changelog notes?)
 then added to the release commit.
+
+## Options
+
+```
+  Verify a changelog has correct entries
+
+  Usage
+    $ changelog-verify <filename>
+
+  Options
+    --unreleased  Verify that the unreleased section has been modified.
+                  (default: false)
+
+  <filename> defaults to CHANGELOG.md
+```
+
+The `--unreleased` flag is great for confirming PRs contain a CHANGELOG note.
 
 ## Usage
 
@@ -58,15 +76,3 @@ keeping in style with http://keepachangelog.com:
 
 Where `<required release notes>` must contain at least one non-empty string
 which isn't a heading.
-
-## Options
-
-The cli takes a single optional parameter:
-the changelog filename:
-
-```
-changelog-verify [filename]
-```
-
-`filename` can be a path relative to the current working directory,
-or an absolute path.

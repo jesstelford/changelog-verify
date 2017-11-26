@@ -6,12 +6,14 @@ var meow = require('meow');
 var verifyChangelog = require('./index');
 
 var cli = meow(`
-	Usage
-	  $ changelog-verify <filename>
+  Usage
+    $ changelog-verify <filename>
 
-	Options
-	  --unreleased : Verify that the unreleased section has been modified.
+  Options
+    --unreleased  Verify that the unreleased section has been modified.
+                  (default: false)
 
+  <filename> defaults to CHANGELOG.md
 `, {
   flags: {
     unreleased: {
