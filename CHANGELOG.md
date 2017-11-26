@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Added
+- Added a flag `--unreleased` to verify a an `Unreleased` section is updated
+
 ## [1.0.4][] - 2016-10-25
 
 ### Fixed
