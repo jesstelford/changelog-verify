@@ -54,7 +54,7 @@ module.exports = function verifyChangelog(data, unreleasedNotEmpty, done) {
     // At this stage, we have found an unreleased section
     // and Groups[1] is the content for that section
     if (!validateContent(groups[1])) {
-      return done('No updates have been added to the "[Unreleased]" section in CHANGELOG');
+      return done('No updates have been added to the "## [Unreleased]" section in CHANGELOG');
     }
   }
 
