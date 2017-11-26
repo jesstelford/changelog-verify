@@ -48,7 +48,7 @@ module.exports = function verifyChangelog(data, unreleasedNotEmpty, done) {
       }
 
       // Otherwise it has been defined, but it's not the first section
-      return done('"[Unreleased]" must be the first section in the CHANGELOG');
+      return done('"## [Unreleased]" must be the first section in the CHANGELOG');
     }
 
     // At this stage, we have found an unreleased section
