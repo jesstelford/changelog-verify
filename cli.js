@@ -13,12 +13,12 @@ var cli = meow(`
 	  --unreleased : Verify that the unreleased section has been modified.
 
 `, {
-	flags: {
-		unreleased: {
-			type: 'boolean',
+  flags: {
+    unreleased: {
+      type: 'boolean',
       default: false
-		}
-	}
+    }
+  }
 });
 
 var fileName = cli.input[0] || 'CHANGELOG.md';
