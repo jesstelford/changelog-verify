@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+### Added
+- CircleCI support
+- Enforce adding changes to `CHANGELOG.md`'s `Unreleased` section for PRs
+
 ## [1.1.0][] - 2017-11-27
 
 ### Added
