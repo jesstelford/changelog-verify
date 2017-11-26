@@ -1,4 +1,4 @@
-# Changelog Verify
+# Changelog Verify [![CircleCI build status](https://circleci.com/gh/jesstelford/changelog-verify.svg?style=svg)](https://circleci.com/gh/jesstelford/changelog-verify)
 
 Ensure that your `CHANGELOG.md` contains a list of changes.
 
