@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][]
 
+## [1.1.2][] - 2018-12-22
+
 ### Updated
 - Bumped to `version-changelog@^3.1.1`
 
@@ -58,7 +60,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Include tests for [in]valid cases
 - Dogfood the tool
 
-[Unreleased]: https://github.com/jesstelford/changelog-verify/compare/v1.1.1...HEAD
+[Unreleased]: https://github.com/jesstelford/changelog-verify/compare/v1.1.2...HEAD
+[1.1.2]: https://github.com/jesstelford/changelog-verify/compare/v1.1.1...v1.1.2
 [1.1.1]: https://github.com/jesstelford/changelog-verify/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/jesstelford/changelog-verify/compare/v1.0.4...v1.1.0
 [1.0.4]: https://github.com/jesstelford/changelog-verify/compare/v1.0.3...v1.0.4
