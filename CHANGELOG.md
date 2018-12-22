@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - CircleCI support
 - Enforce adding changes to `CHANGELOG.md`'s `Unreleased` section for PRs
 
+### Change
+- Upgrade upath package to 1.1.0
+- Upgrade meow to 5.0.0
+
 ## [1.1.0][] - 2017-11-27
 
 ### Added
